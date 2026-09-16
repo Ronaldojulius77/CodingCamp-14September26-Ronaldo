@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Remind Code Standards on Save",
+      "trigger": "PostFileSave",
+      "matcher": "\\.(html|css|js)$",
+      "action": {
+        "type": "agent",
+        "prompt": "A project file was just saved. Gently remind yourself of the project constraints: only 1 CSS file in css/, only 1 JS file in js/, no frameworks, vanilla JS only, all user input must be escaped before rendering to prevent XSS, and CSS custom properties must be used for theming. If the saved file violates any of these rules, flag it clearly."
+      }
+    }
+  ]
+}

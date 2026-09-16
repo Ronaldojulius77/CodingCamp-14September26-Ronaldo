@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Load Project Context on Session Start",
+      "trigger": "SessionStart",
+      "action": {
+        "type": "agent",
+        "prompt": "This is the Expense & Budget Visualizer project for RevoU Coding Camp (Batch 14 — Ronaldo). The project uses HTML, CSS, and Vanilla JavaScript only — no frameworks. There is exactly 1 CSS file (css/style.css) and 1 JS file (js/app.js). Data is stored in LocalStorage. The app features: transaction form with validation, scrollable transaction list with delete, auto-updating balance, doughnut chart via Chart.js, custom categories, monthly summary, sort transactions, spending limit highlight, and dark/light mode toggle. Always keep these constraints in mind when making changes."
+      }
+    }
+  ]
+}
